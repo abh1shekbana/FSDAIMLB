@@ -1,58 +1,46 @@
 body{
-    background-color: azure;
+    background-color: beige;
 }
-
-div{
-    background-color: rgb(93, 95, 208);
-}
-
 .container{
-background-color: rgb(173, 174, 230);
-height: 400px;
-border: 2px solid red;
-/* margin: 200px; */
-padding: 20px;
-box-sizing: border-box;
-display: flex;
-flex-wrap: wrap;
-flex-flow: row-reverse;
-/* FLEX will arrange all the childs in single line */
-/* For Moving the entire box wrt screen */
+    background-color: aqua;
+    height: 400px;
+    border: 2px solid red;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
 }
-
 .child1,.child2,.child3,.child4{
+    height: 50px;
+    width: 100px;
+    border: 2px dotted goldenrod;
 
-height: 200px;
-width: 200px;
-border: 2px dotted mediumseagreen;
-/* display: inline-block; */
-margin: 50px;
-margin-right: 100px;
-/* can use color tag to cahnge text color */
-} 
-
+    margin: 20px;
+}
 .child1{
-    background-color: lightsalmon;
+    background-color: azure;
+    flex-basis: 50%;
 }
-
 .child2{
-    background-color: rgb(250, 135, 233);
+    background-color: blueviolet;
 }
-
 .child3{
-    background-color: rgb(121, 79, 79);
+    background-color: blanchedalmond;
+}
+.child4{
+    background-color:yellowgreen;
 }
 
-.child4{
-    background-color: rgb(255, 247, 0);
-}
-/* div+p{
-    background-color: yellow;
+ /* for the sibbling of div */
+/* div+p{ 
+    background-color:yellowgreen;
 } */
-/* 
-#child1{
-    background-color: rgb(123, 255, 0);
+/* #child1{
+    background-color: red;
 }
 .myclass{
-    background-color: violet;
+    background-color: green;
 } */
